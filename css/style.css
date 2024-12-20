@@ -259,7 +259,8 @@ article#whast{
     padding: auto;
     display: flex;
     flex-direction: column;
-    justify-content: center; height: 35vh;
+    justify-content: center; 
+    height: 35vh;
     align-items: center;
     text-align: center;
 }
@@ -290,12 +291,68 @@ article#whast> button{
     display: flex;
     width: 100%;
     justify-content: center;
+    transform: translate(0,-150px);
 }
 .box{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 30%;
+    flex-direction: row;
+    font-size: 1.3em;
+    width: 20%;
     margin: 30px;
-    border: 1px solid #38ef7d;
+    padding: 20px;
+}
+#contato > #informação> .box> .texto > p{
+  font-size: 14px;
+  transform: translate(0px, -20px);
+}
+.icon{
+  background-color: aliceblue;
+  height: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  transform: translate(-10px, 26px);
+}
+.icon >img{
+  height: 20px;
+  width: 20px;
+  margin: 0;
+  padding: 0;
+}
+.icon:hover{
+  background-color: rgba(240, 248, 255, 0.171);
+}
+div#social{
+  transform: translate(0, -80px);
+  text-align: center;
+}
+div#social>h1{
+ font-size: 3em;
+}
+#detalhe2{
+  transform: translate(0, -50px);
+}
+div#social>p{
+  font-size: 1.3em;
+}
+img{
+  height: 30px;
+  margin: 2px;
+}
+img:hover{
+  height: px;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Para garantir que fique acima de outros elementos */
+  background-color: black; /* Para que o fundo do cabeçalho seja visível */
+}
+#whatsappButton {
+  position: fixed;
+  bottom: 20px; /* Distância do fundo */
+  right: 20px; /* Distância da direita */
+  z-index: 1000; /* Para garantir que fique acima de outros elementos */
+  transition: opacity 0.3s;
 }

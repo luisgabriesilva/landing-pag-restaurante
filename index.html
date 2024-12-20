@@ -14,10 +14,10 @@
             </div>
             <div id="nav">
                 <nav id="nav-itens">
-                    <li><a href="#">menu</a></li>
-                    <li><a href="#">sobre nós</a></li>
-                    <li><a href="#">localização</a></li>
-                    <li><a href="#">contato</a></li>
+                    <li><a href="#parallax">home</a></li>
+                    <li><a href="#texto-sobre">sobre nós</a></li>
+                    <li><a href="#localização">localização</a></li>
+                    <li><a href="#contato">contato</a></li>
                 </nav>
             </div>
         </header>
@@ -34,11 +34,14 @@
         </section>
     </div>
     <main>
+        <a id="whatsappButton" href="https://wa.me/5511999999999" target="_blank" style="display: none;">
+            <img src="./imagens/chamada-telefonica.png" alt="WhatsApp" style="width: 60px; height: 60px;">
+        </a>
         <article id="sobre-nos">
             <div id="imagens2">
                 <img src="./imagens/32.png" alt="">
             </div>
-            <div id="testo-sobre">
+            <div id="texto-sobre">
                 <h1>A Narô Culinária Japonesa</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quis tempora culpa, vitae ipsa, aperiam corporis, voluptate odit repellendus accusantium natus? Voluptatum possimus repudiandae omnis molestiae esse. Harum, ea. Repellat!</p>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, aut cupiditate, sed asperiores sint, excepturi modi libero quod dicta autem accusantium eligendi aliquam porro ab doloribus reiciendis a? Voluptatibus, magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ex autem quas. Quam excepturi illum mollitia pariatur magni, libero quos nobis modi quis repudiandae delectus vitae debitis nisi. Nam, esse.</p>
@@ -99,6 +102,7 @@
 
         <div class="box">
             <div class="icon">
+                <img src="./imagens/casa.png" alt="">
             </div>
             <div class="texto">
                 <h1>endereço</h1>
@@ -108,6 +112,7 @@
 
         <div class="box">
             <div class="icon">
+                <img src="./imagens/o-email.png" alt="">
             </div>
             <div class="texto">
                 <h1>e-mail</h1>
@@ -117,6 +122,7 @@
         
         <div class="box">
             <div class="icon">
+                <img src="./imagens/telefone.png" alt="">
             </div>
             <div class="texto">
                 <h1>telefone</h1>
@@ -125,40 +131,20 @@
         </div>
     </div>
 
-        <div>
+        <div id="social">
             <h1>redes socias</h1>
+            <p id="detalhe2">_____________________________________________________________________________</p>
             <p>Siga-nos nas redes e fique por dentro das novidades
             </p>
-            <div>icon
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
+            <div id="rede-social">
+            <a href=""><img src="./imagens/chamada-telefonica.png" alt=""></a>
+            <a href=""><img src="./imagens/facebook.png" alt=""></a>
+            <a href=""><img src="./imagens/instagram.png" alt=""></a>
         </div>
 
         </div>
     </article>
     </main>
-    <script>
-        let currentIndex = 0;
-
-function showSlide(index) {
-    const items = document.querySelectorAll('.carousel-item');
-    items.forEach((item, i) => {
-        item.classList.remove('active');
-        if (i === index) {
-            item.classList.add('active');
-        }
-    });
-}
-
-function moveSlide(direction) {
-    const items = document.querySelectorAll('.carousel-item');
-    currentIndex = (currentIndex + direction + items.length) % items.length;
-    showSlide(currentIndex);
-}
-
-// Inicializa o carrossel mostrando o primeiro item
-showSlide(currentIndex);
-    </script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
