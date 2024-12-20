@@ -1,0 +1,301 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: aliceblue;
+}
+#parallax{
+    background-image: url(../imagens/fachada-do-restaurante.jpg);
+    width: 99vw;
+    height: 100vh; /* Mantenha a altura para o efeito parallax */
+    background-repeat: no-repeat;
+    background-size: cover; /* Adicionado para cobrir toda a tela */
+    background-attachment: fixed; /* Adicionado para o efeito parallax */
+    position: relative; /* Para garantir que o conteúdo fique sobre a imagem */
+}
+#imagem2{
+    background-image: url(../imagens/SD8bRW0C7dVv2c8VCLwW2k7j44M9coG6vYmjM92I.jpg);
+    width: 99vw;
+    height: 50vh; /* Mantenha a altura para o efeito parallax */
+    background-repeat: no-repeat;
+    background-size: cover; /* Adicionado para cobrir toda a tela */
+    background-attachment: fixed; /* Adicionado para o efeito parallax */
+    position: relative; /* Para garantir que o conteúdo fique sobre a imagem */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+    position: relative; /* Para garantir que o header fique sobre a imagem */
+    z-index: 1; /* Para garantir que o header fique sobre a imagem */
+}
+header >div#logo > img{
+    height: 40px;
+    margin: 10px;
+    margin-left: 70px;
+}
+nav{
+    display: flex;
+    flex-direction: row;
+}
+nav > li{
+    list-style: none;
+    margin: 0px 25px;
+}
+#nav-itens{
+    margin: 15px;
+    margin-right: 60px;
+}
+nav > li:hover{ color: #80e486;
+    text-decoration: underline ;
+
+    transition: 0.5s;
+
+}
+nav > li >a{
+    text-decoration: none;
+    color: aliceblue;
+}
+#hero-conteriner{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 400px;
+}
+#hero-conteriner> h3{
+    font-size: 3em;
+    margin: 0 0 0 20px;
+}
+#hero-conteriner>p{
+    margin:  0 0 0 20px;
+}
+#hero-conteriner > button{
+    width: 20em;
+    margin: 20px 20px 20px 60px;
+}
+/* From Uiverse.io by Gaurav-WebDev */ 
+/* From Uiverse.io by Gaurav-WebDev */ 
+#button {
+    position: relative;
+    margin: 0;
+    padding: 17px 35px;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-color:rgba(25, 189, 25, 0.6)fff;
+    border: 1px solid rgba(25, 189, 25, 0.6);
+    border-radius: 10px;
+    color: rgba(25, 189, 25, 0.6);
+    font-weight: 400;
+    font-family: inherit;
+    z-index: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+  }
+  
+  #button span {
+    color: rgba(25, 189, 25, 0.6);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+  
+ #button:hover {
+    animation: rotate624 0.7s ease-in-out both;
+  }
+  
+  #button:hover span {
+    animation: storm1261 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+  }
+  
+  @keyframes rotate624 {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+  
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+  
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+  
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes storm1261 {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+  
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+  
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+  
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+  
+  .btn-shine {
+    border: 1px solid;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .btn-shine span {
+    z-index: 20;
+  }
+  
+  .btn-shine:after {
+    background: #38ef7d;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.4;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+  }
+  
+  .btn-shine:hover:after {
+    left: 120%;
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  }
+#sobre-nos{
+    display: flex;
+    flex-direction: row;
+}
+#sobre-nos > div > img{
+    padding: 50px 20px 50px 90px ;
+    width:500px;
+    height: 400px;
+}
+#sobre-nos > div > h1{
+    margin-top: 50px;
+    font-size: 3em;
+}#sobre-nos > div > p{
+    width: 80%;
+    margin-left: 10px
+}
+iframe{
+    padding: 50px;
+    height: 400px;
+
+}
+#horarios{
+    width: 50%;
+    margin: auto 0 auto 200px;
+}
+
+.carousel {
+    position: relative;
+    width: 600px; /* Ajuste conforme necessário */
+    overflow: hidden;
+    text-align: center; /* Centraliza o texto dentro do carrossel */
+}
+
+.carousel-item {
+    display: none;
+    padding: 20px;
+}
+
+.carousel-item.active {
+    display: block;
+}
+.carousel-item.active>p{
+    background-color: rgba(0, 0, 0, 0.381);
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 2em;
+}
+
+.carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    cursor: pointer;
+}
+
+.carousel-prev {
+    left: 10px;
+}
+
+.carousel-next {
+    right: 10px;
+}
+article#whast{
+    background-color: #454246;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; height: 35vh;
+    align-items: center;
+    text-align: center;
+}
+article#whast > h1{
+    font-size: 2em;
+    transform: translateY(20px);
+}
+article#whast > p{
+    margin: 0;
+}
+article#whast> button{
+    margin: auto;
+}
+#contato > p{
+    padding: 20px;
+    font-size: 1.4em;
+}
+#contato > p#detalhe{
+    width: 20px;
+    transform: translate(79px, -98px);
+}
+#contato > h2{
+    padding-left: 20px;
+    font-size: 2.3em;
+    transform: translateY(-130px);
+}
+#informação{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30%;
+    margin: 30px;
+    border: 1px solid #38ef7d;
+}
