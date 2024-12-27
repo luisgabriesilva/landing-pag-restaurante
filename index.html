@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naro pagina de auta converção</title>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/midiaqueris.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
 <body>
     <div id="parallax">
@@ -12,15 +14,21 @@
             <div id="logo">
                 <img src="imagens/3.png" alt="">
             </div>
+            <span class="material-symbols-outlined" onclick="abrirmenu()">
+                menu
+                </span>
             <div id="nav">
                 <nav id="nav-itens">
+                    <ul>
                     <li><a href="#parallax">home</a></li>
                     <li><a href="#texto-sobre">sobre nós</a></li>
                     <li><a href="#localização">localização</a></li>
                     <li><a href="#contato">contato</a></li>
+                </ul>
                 </nav>
             </div>
         </header>
+
         <section id="conteiner">
             <article id="hero-scection">
                 <div id="hero-conteriner">                        
@@ -33,20 +41,24 @@
             </article>
         </section>
     </div>
+
     <main>
         <a id="whatsappButton" href="https://wa.me/5511999999999" target="_blank" style="display: none;">
             <img src="./imagens/chamada-telefonica.png" alt="WhatsApp" style="width: 60px; height: 60px;">
         </a>
-        <article id="sobre-nos">
-            <div id="imagens2">
-                <img src="./imagens/32.png" alt="">
-            </div>
-            <div id="texto-sobre">
-                <h1>A Narô Culinária Japonesa</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quis tempora culpa, vitae ipsa, aperiam corporis, voluptate odit repellendus accusantium natus? Voluptatum possimus repudiandae omnis molestiae esse. Harum, ea. Repellat!</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, aut cupiditate, sed asperiores sint, excepturi modi libero quod dicta autem accusantium eligendi aliquam porro ab doloribus reiciendis a? Voluptatibus, magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ex autem quas. Quam excepturi illum mollitia pariatur magni, libero quos nobis modi quis repudiandae delectus vitae debitis nisi. Nam, esse.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem impedit ad provident, quae officiis eligendi corrupti corporis quod facere sint harum quaerat, tempora blanditiis, natus saepe quia recusandae labore quibusdam.</p>
-            </div>
+
+        <article class="fade-in">
+            <article id="sobre-nos">
+                <div id="imagens2">
+                    <img src="./imagens/32.png" alt="">
+                </div>
+                <div id="texto-sobre">
+                    <h1>A Narô Culinária Japonesa</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quis tempora culpa, vitae ipsa, aperiam corporis, voluptate odit repellendus accusantium natus? Voluptatum possimus repudiandae omnis molestiae esse. Harum, ea. Repellat!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, aut cupiditate, sed asperiores sint, excepturi modi libero quod dicta autem accusantium eligendi aliquam porro ab doloribus reiciendis a? Voluptatibus, magnam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ex autem quas. Quam excepturi illum mollitia pariatur magni, libero quos nobis modi quis repudiandae delectus vitae debitis nisi. Nam, esse.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem impedit ad provident, quae officiis eligendi corrupti corporis quod facere sint harum quaerat, tempora blanditiis, natus saepe quia recusandae labore quibusdam.</p>
+                </div>
+            </article>
         </article>
 
     
@@ -68,8 +80,9 @@
             <button class="carousel-prev" onclick="moveSlide(-1)">&#10094;</button>
             <button class="carousel-next" onclick="moveSlide(1)">&#10095;</button>              
         </article>
+    
 
-
+        <article class="fade-in">
             <article id="sobre-nos">
                 <div id="horarios">
                     <p>NOSSO horarios</p>
@@ -78,22 +91,25 @@
                 </div>
                 <div id="localização">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3476.7989037447205!2d-50.8747412!3d-29.376176800000007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951933a5950e4f8f%3A0x21f01b08593c528c!2sNar%C5%8D%20-%20Culin%C3%A1ria%20Japonesa!5e0!3m2!1sen!2sbr!4v1734642095904!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-        </div>
-    </article>
-
-
-    <article id="whast">
-        <h1>Reserve agora e garanta seu lugar!</h1>
-        <p>Realizando a Reserva Online você garante seu lugar com segurança e fica livre para escolher entre as nossas deliciosas opções no cardápio.</p>
-        <button id="button" class="btn-shine">
-            <span>reserve seu horario</span>
-        </button>
-    </article>
+                </div>
+            </article>
+        </article>
 
 
+   
+        <article id="whast">
+            <h1>Reserve agora e garanta seu lugar!</h1>
+            <p>Realizando a Reserva Online você garante seu lugar com segurança e fica livre para escolher entre as nossas deliciosas opções no cardápio.</p>
+            <button id="button" class="btn-shine">
+                <span>reserve seu horario</span>
+            </button>
+        </article>
+    
 
 
+
+
+    <article class="fade-in">
     <article id="contato">
         <p>contatos</p>
         <P id="detalhe">________</P>
@@ -133,7 +149,7 @@
 
         <div id="social">
             <h1>redes socias</h1>
-            <p id="detalhe2">_____________________________________________________________________________</p>
+            
             <p>Siga-nos nas redes e fique por dentro das novidades
             </p>
             <div id="rede-social">
@@ -144,6 +160,7 @@
 
         </div>
     </article>
+</article>
     </main>
     <script src="./script/script.js"></script>
 </body>
