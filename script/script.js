@@ -1,18 +1,34 @@
-document.addEventListener('scroll', function() {
-    const elements = document.querySelectorAll('.fade-in'); // Seleciona todos os elementos com a classe fade-in
-    const windowHeight = window.innerHeight; // Altura da janela
+let currentSlide = 0; // Índice do slide atual
+const slides = document.querySelectorAll('.carousel-item'); // Seleciona todos os itens do carrossel
 
-    elements.forEach(element => {
-        const elementTop = element.getBoundingClientRect().top; // Posição do elemento em relação à janela
+function moveSlide(direction) {
+    // Oculta o slide atual
+    slides[currentSlide].classList.remove('active');
+    
+    // Atualiza o índice do slide atual
+    currentSlide += direction;
 
-        // Verifica se o elemento está visível na janela
-        if (elementTop < windowHeight && elementTop > 0) {
-            element.classList.add('visible'); // Adiciona a classe visible
-        } else {
-            element.classList.remove('visible'); // Remove a classe visible se não estiver visível
-        }
-    });
-});
+    // Verifica se o índice está fora dos limites
+    if (currentSlide < 0) {
+        currentSlide = slides.length - 1; // Volta para o último slide
+    } else if (currentSlide >= slides.length) {
+        currentSlide = 0; // Volta para o primeiro slide
+    }
+
+    // Mostra o novo slide
+    slides[currentSlide].classList.add('active');
+}
+
+// Função para iniciar o carrossel automático
+function startAutoSlide() {
+    setInterval(() => {
+        moveSlide(1); // Muda para o próximo slide
+    }, 3000); // Muda a cada 3 segundos (3000 milissegundos)
+}
+
+// Inicia o carrossel automático
+startAutoSlide();
+
 function abrirmenu() {
     const itens = document.getElementById('nav');
     if (itens.style.display === "block") {

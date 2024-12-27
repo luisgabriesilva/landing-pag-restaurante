@@ -58,72 +58,6 @@ nav ul li a{
 span.material-symbols-outlined{
   display: none;
   padding: 15px;
-  
-
-}
-@media only screen and (max-width: 768px){
-    body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden; /* Evita rolagem horizontal */
-    }
-
-    header {
-        width: 100%; /* Garante que o cabeçalho ocupe 100% da largura */
-        padding: 0; /* Remove padding que pode causar rolagem */
-    }
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        background-color: rgba(0, 0, 0, 0.341);
-        margin: 0; /* Remove margens que podem causar rolagem */
-        padding: 10px; /* Ajuste o padding conforme necessário */
-    }
-
-    #parallax {
-        width: 100vw; /* Garante que o parallax não exceda a largura da viewport */
-        overflow: hidden; /* Evita rolagem lateral */
-    }
-
-    /* Outros ajustes conforme necessário */
-  
-  span.material-symbols-outlined{
-    display: block;
-  }
-  article#sobre-nos{
-    flex-direction: column-reverse;
-  }
-  article#sobre-nos div#texto-sobre{
-    margin-left: 100px;
-  }
-  iframe{
-    width: 90%;
-    margin: 0 0 0 -10px;
-  }
-  div#horarios{
-    margin: 0px 40px;
-  }
-
-  div#informação{
-    display: flex;
-    flex-direction: column-reverse;
-  }
-  article#whas{
-    height: 80vh;
-  }
-  #sobre-nos > div#imagens2 > img{
-    margin: 0;
-    width:70%;
-    height: 70%;
-}
-header >div#logo > img{
-  height: 30px;
-  margin: 10px;
-  margin-left: 0;
-  background-position: left bottom;
-}
-
 }
 
 #hero-conteriner{
@@ -419,13 +353,67 @@ header {
   transition: opacity 0.3s;
 }
 
-.fade-in {
-    opacity: 0; /* Começa invisível */
-    transform: translateY(20px); /* Move para baixo */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Transição suave */
+@media only screen and (max-width: 768px){
+  body {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden; /* Evita rolagem horizontal */
+  }
+
+  header {
+      width: 100%; /* Garante que o cabeçalho ocupe 100% da largura */
+      padding: 0; /* Remove padding que pode causar rolagem */
+  }
+
+  nav ul {
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.341);
+      margin: 0; /* Remove margens que podem causar rolagem */
+      padding: 10px; /* Ajuste o padding conforme necessário */
+  }
+
+  #parallax {
+      width: 100vw; /* Garante que o parallax não exceda a largura da viewport */
+      overflow: hidden; /* Evita rolagem lateral */
+  }
+
+  /* Outros ajustes conforme necessário */
+
+span.material-symbols-outlined{
+  display: block;
+}
+article#sobre-nos{
+  flex-direction: column-reverse;
+}
+article#sobre-nos div#texto-sobre{
+  margin-left: 100px;
+}
+iframe{
+  width: 90%;
+  margin: 0 0 0 -10px;
+}
+div#horarios{
+  margin: 0px 40px;
 }
 
-.fade-in.visible {
-    opacity: 1; /* Torna visível */
-    transform: translateY(0); /* Retorna à posição original */
+div#informação{
+  display: flex;
+  flex-direction: column-reverse;
+}
+article#whas{
+  height: 80vh;
+}
+#sobre-nos > div#imagens2 > img{
+  margin: 0;
+  width:70%;
+  height: 70%;
+}
+header >div#logo > img{
+height: 30px;
+margin: 10px;
+margin-left: 0;
+background-position: left bottom;
+}
+
 }
